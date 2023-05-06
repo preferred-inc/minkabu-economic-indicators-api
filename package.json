@@ -1,0 +1,30 @@
+{
+  "name": "minkabu-economic-indicators-api",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "clean": "rimraf dist",
+    "tsc": "tsc",
+    "build": "npm-run-all clean tsc"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
+    "date-fns": "^2.30.0",
+    "express": "^4.18.2",
+    "npm-run-all": "^4.1.5",
+    "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/cheerio": "^0.22.31",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
